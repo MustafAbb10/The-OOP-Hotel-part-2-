@@ -12,8 +12,10 @@
                 EmployeeID = "M52",
                 StartDate = new DateTime(2026, 09, 29),
                 Salary = 50000m,
+                
 
                 Department = "Administration"
+
 
             };
 
@@ -33,7 +35,7 @@
                 Name = "Anders",
                 Age = 36,
                 EmployeeID = "M5999",
-
+                Expertise = "it",
                 StartDate = new DateTime(2026, 10, 30),
                 Salary = 30000m,
                 ConsultingFirm = "Konsult firma Ab",
@@ -41,15 +43,32 @@
 
             };
 
+            Housekeeper housekeeper = new Housekeeper()
+            {
+                Name = "Anna",
+                Age = 55,
+                EmployeeID = "M59565",
+
+                StartDate = new DateTime(2026, 09, 30),
+                Salary = 100m,
+                Department = "Städ"
+
+            };
+
            /* employee.Introduce();
             employee.PrintInfo();
             employee.Work();*/
-            consultant.Introduce();
+           /* consultant.Introduce();
             consultant.PrintInfo();
             employee.PrintInfo();
             employee.Introduce();
             chefen.PrintInfo();
-            chefen.Introduce();
+            chefen.Introduce();*/
+            housekeeper.PrintInfo();
+            housekeeper.Introduce();
+            consultant.Introduce();
+            consultant.PrintInfo();
+            
                
 
             

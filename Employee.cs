@@ -13,13 +13,13 @@ namespace The_OOP_Hotel__part_2_
 
 
 
-        public void Work()
+        public virtual void Work()
         {
            
             Console.WriteLine("Den anställde är " + JobTitle + " på " + Department + ".");
         }
 
-        public override void Introduce()
+        public virtual void Introduce()
         {
             base.Introduce();
             Work();

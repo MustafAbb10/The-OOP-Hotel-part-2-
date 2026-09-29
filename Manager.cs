@@ -8,6 +8,13 @@ namespace The_OOP_Hotel__part_2_
     {
         public string Department { get; set; }
 
+        public void PlanBudget()
+        {
+            Console.WriteLine($"{Name} planerar budgeten ");
+            
+
+        }
+
         public void HoldMeeting()
         {
             Console.WriteLine("Lystring! Chefen håller möte. Kom till lokalen och sluta fika!");
@@ -24,6 +31,7 @@ namespace The_OOP_Hotel__part_2_
         {
             base.PrintInfo();
             Console.WriteLine($" Departament är: {Department}");
+            PlanBudget();
 
         }
 

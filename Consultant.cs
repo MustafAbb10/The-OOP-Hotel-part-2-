@@ -12,17 +12,29 @@ namespace The_OOP_Hotel__part_2_
 
         public string  ConsultingFirm { get; set; }
 
+        public string Expertise { get; set; }
+
+        
+
+        
+
         public void Giveadvice()
         {
-            Console.WriteLine("konsulten tips");
+            Console.WriteLine($"konsulten är {Expertise} expert");
+
+
         }
+
+
 
         public override void PrintInfo()
         {
 
+            
             base.PrintInfo();
             Console.WriteLine($" ConsultingFirma: {ConsultingFirm}");
             Console.WriteLine($" HourlyRate: {HourlyRate}");
+            Giveadvice();
 
 
         }

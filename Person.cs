@@ -28,9 +28,9 @@ namespace The_OOP_Hotel__part_2_
         public virtual void Introduce()
         {
 
-            Console.WriteLine($"{Name} är chefens namn och {Age} är hans ålder.");
             Console.WriteLine($"{EmployeeID} är hans jobb-ID och {StartDate} så började han jobba här.");
             Console.WriteLine($"{Salary} är hans lön");
+
         }
     }
 }
