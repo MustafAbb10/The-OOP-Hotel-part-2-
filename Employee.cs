@@ -15,7 +15,7 @@ namespace The_OOP_Hotel__part_2_
 
         public virtual void Work()
         {
-           
+            
             Console.WriteLine("Den anställde är " + JobTitle + " på " + Department + ".");
         }
 
