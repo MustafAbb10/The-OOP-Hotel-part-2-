@@ -6,17 +6,31 @@ namespace The_OOP_Hotel__part_2_
 {
     internal class Person
     {
-        string Name { get; set; }
-        int Age { get; set; }
-        string EmployeeId { get; set; }
-        DateTime StartDate { get; set; }
-        decimal Salary { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string EmployeeID { get; set; }
+        public DateTime StartDate { get; set; }
+        public decimal Salary { get; set; }
 
-        public void PrintInfo(string name, int age)
+
+
+
+
+        public virtual void PrintInfo()
         {
-            Name = name;
-            Age = age;
-            Console.WriteLine(name + " " + age);
+
+            Console.WriteLine($"Namn: {Name}");
+            Console.WriteLine($"EmpolyeeId: {EmployeeID}");
+            Console.WriteLine($"StartDate {StartDate}");
+            Console.WriteLine($"Salary: {Salary}");
+        }
+
+        public virtual void Introduce()
+        {
+
+            Console.WriteLine($"{Name} är chefens namn och {Age} är hans ålder.");
+            Console.WriteLine($"{EmployeeID} är hans jobb-ID och {StartDate} så började han jobba här.");
+            Console.WriteLine($"{Salary} är hans lön");
         }
     }
 }
